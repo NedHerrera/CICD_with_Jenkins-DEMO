@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'git checkout origin/main && git merge origin/develop && git add . && git commit -m "Jenkins" && git push origin' 
+        sh 'git checkout origin/main && git merge origin/develop && git add . && git commit -m "Jenkins" && git push origin HEAD:main' 
       }
     }
   }
