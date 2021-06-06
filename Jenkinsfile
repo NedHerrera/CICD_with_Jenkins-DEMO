@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build y preparar git flow') {
       steps {
-        sh 'git checkout origin/main'
+        sh 'git checkout origin/develop'
       }
     }
     stage('Run tests') {
