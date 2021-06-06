@@ -6,14 +6,19 @@ pipeline {
         bat 'npm i'
       }
     }
-    stage('Prerarar git flow') {
+    stage('Build y preparar git flow') {
       steps {
-        bat 'git checkout develop'
+        bat 'git checkout main'
       }
     }
     stage('Run tests') {
       steps {
         bat 'npm test'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        bat 'git merge develop'
       }
     }
   }
