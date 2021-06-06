@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'git config --global user.email tesco.herrera.edu@gmail.com && git checkout origin/main && git merge origin/develop && git add . && git commit -m "Jenkins" && git push origin main' 
+        sh 'git checkout origin/main && git merge origin/develop && git add . && git commit -m "Jenkins" && git push origin main' 
       }
     }
   }
