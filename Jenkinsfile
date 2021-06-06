@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Instar dependencias') {
       steps {
-        sh 'npm i'
+        bat 'npm i'
       }
     }
     stage('Run tests') {
       steps {
-        sh 'npm test'
+        bat 'npm test'
       }
     }
   }
