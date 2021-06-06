@@ -1,9 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('Instar dependencias') {
+    stage('Instalar dependencias') {
       steps {
         bat 'npm i'
+      }
+    }
+    stage('Prerarar git flow') {
+      steps {
+        bat 'git flow init'
       }
     }
     stage('Run tests') {
