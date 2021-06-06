@@ -21,10 +21,5 @@ pipeline {
         sh 'git merge origin/develop'
       }
     }
-    stage('Deploy') {
-      steps {
-        sh 'git merge develop'
-      }
-    }
   }
 }
