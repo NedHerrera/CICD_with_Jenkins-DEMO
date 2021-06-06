@@ -3,22 +3,22 @@ pipeline {
   stages {
     stage('Instalar dependencias') {
       steps {
-        bat 'npm i'
+        sh 'npm i'
       }
     }
     stage('Build y preparar git flow') {
       steps {
-        bat 'git checkout origin/main'
+        sh 'git checkout origin/main'
       }
     }
     stage('Run tests') {
       steps {
-        bat 'npm test'
+        sh 'npm test'
       }
     }
     stage('Deploy') {
       steps {
-        bat 'git merge origin/develop'
+        sh 'git merge origin/develop'
       }
     }
   }
