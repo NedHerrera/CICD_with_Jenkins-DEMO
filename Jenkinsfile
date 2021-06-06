@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build y preparar git flow') {
       steps {
-        bat 'git checkout main'
+        bat 'git checkout origin/main'
       }
     }
     stage('Run tests') {
@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        bat 'git merge develop'
+        bat 'git merge origin/develop'
       }
     }
   }
