@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Prerarar git flow') {
       steps {
-        bat 'git flow init'
+        bat 'git flow init -d'
       }
     }
     stage('Run tests') {
