@@ -10,7 +10,7 @@ function validar(a,b)
         console.log(a + " es mas grande que " + b)
         return true
     }
-    console.log("Es falso ")
+    console.log("Es falso")
     console.log(a + " es mas peque;o que " + b)
     return false;
 }
