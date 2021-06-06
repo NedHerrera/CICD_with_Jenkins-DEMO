@@ -1,0 +1,29 @@
+{
+  "name": "DEMO-CICD_Jenkins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "chai": "^4.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.4.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NedHerrera/DEMO-CICD_Jenkins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NedHerrera/DEMO-CICD_Jenkins/issues"
+  },
+  "homepage": "https://github.com/NedHerrera/DEMO-CICD_Jenkins#readme"
+}
